@@ -162,6 +162,8 @@ export interface AxisProps<T> {
     scale?: ScaleFunction;
     numberOfTicks?: number;
     svg?: Partial<TextProps>;
+    min?: number;
+    max?: number;
 }
 
 // XAxis
@@ -185,8 +187,6 @@ export interface YAxisProps<T> extends AxisProps<T> {
         top?: number;
         bottom?: number;
     };
-    min?: number;
-    max?: number;
     yAccessor?: AccessorFunction<T, any>;
 }
 
